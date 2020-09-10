@@ -3,8 +3,8 @@ const path = require("path");
 
 //引入数据源
 // const profileData = require('./json/api.json')
-// const profileData = require('./json/swaggerApi.json')
-const profileData = require('./json/swaggerApi2.json')
+const profileData = require('./json/swaggerApi.json')
+// const profileData = require('./json/swaggerApi2.json')
 
 //引入文件模板
 let template = require("./template");
@@ -49,8 +49,7 @@ var result = Object.entries(profileData.paths).reduce((ary, [k, v]) => {
 
     } else {
         var { summary, parameters } = v.get
-        var properties = parameters
-        var newStr = properties ? getStr(properties) : ''
+        var newStr = parameters ? getStr(parameters) : ''
         var type = Object.keys(v)[0]
 
         const url = k
