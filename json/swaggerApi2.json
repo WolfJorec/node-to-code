@@ -1,0 +1,2090 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "城管可视化",
+    "version": "last"
+  },
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "智慧城管",
+      "description": null
+    },
+    {
+      "name": "首页",
+      "description": null
+    },
+    {
+      "name": "地图相关",
+      "description": null
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/dgmap/app/interface/townStreetCleanIndex": {
+      "get": {
+        "tags": [
+          "智慧城管"
+        ],
+        "summary": "2.10镇街洁净指数接口",
+        "description": "",
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "raw",
+            "in": "body",
+            "description": "raw paramter",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "FIVE": {
+                        "type": "number",
+                        "description": "前四月的洁净指数"
+                      },
+                      "SIX": {
+                        "type": "number",
+                        "description": "前五月的洁净指数"
+                      },
+                      "ONE": {
+                        "type": "number",
+                        "description": "当月的洁净指数（即当月）"
+                      },
+                      "FOUR": {
+                        "type": "number",
+                        "description": "前三月的洁净指数"
+                      },
+                      "TOWN_STREET": {
+                        "type": "string",
+                        "description": "镇街名"
+                      },
+                      "TWO": {
+                        "type": "number",
+                        "description": "上个月的洁净指数"
+                      },
+                      "THREE": {
+                        "type": "number",
+                        "description": "前两月的洁净指数"
+                      }
+                    },
+                    "required": [
+                      "FIVE",
+                      "SIX",
+                      "ONE",
+                      "FOUR",
+                      "TOWN_STREET",
+                      "TWO",
+                      "THREE"
+                    ]
+                  },
+                  "description": "各镇街洁净指数列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/caseConcernsHigh": {
+      "get": {
+        "tags": [
+          "智慧城管"
+        ],
+        "summary": "2.16市民关注案件高发类型分类统计接口",
+        "description": "<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">镇街列表：</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">南城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">万江街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">松山湖街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">莞城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">茶山镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">厚街镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">道滘镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">洪梅镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">望牛墩镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">高埗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">横沥镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东坑镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">寮步镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">常平镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">樟木头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">沙田镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">麻涌镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">中堂镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石碣镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石龙镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石排镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">企石镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">桥头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">谢岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">清溪镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">凤岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">塘厦镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">虎门镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">长安镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">黄江镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大朗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大岭山镇</span>",
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "年月，格式yyyy-MM",
+            "type": "string"
+          },
+          {
+            "name": "townName",
+            "in": "query",
+            "required": false,
+            "description": "镇街名（传空值则统计东莞全市）",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "rate": {
+                        "type": "number",
+                        "description": "占比（单位%）"
+                      },
+                      "num": {
+                        "type": "number",
+                        "description": "数量"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "案件类型名称"
+                      }
+                    },
+                    "required": [
+                      "rate",
+                      "num",
+                      "name"
+                    ]
+                  },
+                  "description": "自行采集类案件的案件类型排名列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/collectionCaseHigh": {
+      "get": {
+        "tags": [
+          "智慧城管"
+        ],
+        "summary": "2.17自行采集类案件高发案件类型统计接口",
+        "description": "|  |\n| --- |\n| 镇街列表：<br>南城街道<br>万江街道<br>松山湖街道<br>东城街道<br>莞城街道<br>茶山镇<br>厚街镇<br>道滘镇<br>洪梅镇<br>望牛墩镇<br>高埗镇<br>横沥镇<br>东坑镇<br>寮步镇<br>常平镇<br>樟木头镇<br>沙田镇<br>麻涌镇<br>中堂镇<br>石碣镇<br>石龙镇<br>石排镇<br>企石镇<br>桥头镇<br>谢岗镇<br>清溪镇<br>凤岗镇<br>塘厦镇<br>虎门镇<br>长安镇<br>黄江镇<br>大朗镇<br>大岭山镇 |",
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "年月，格式yyyy-MM",
+            "type": "string"
+          },
+          {
+            "name": "townName",
+            "in": "query",
+            "required": false,
+            "description": "镇街名（传空值则统计东莞全市）",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "rate": {
+                        "type": "number",
+                        "description": "占比（单位%）"
+                      },
+                      "num": {
+                        "type": "number",
+                        "description": "数量"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "案件类型名称"
+                      }
+                    },
+                    "required": [
+                      "rate",
+                      "num",
+                      "name"
+                    ]
+                  },
+                  "description": "自行采集类案件的案件类型排名列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/caseConcerns": {
+      "get": {
+        "tags": [
+          "智慧城管"
+        ],
+        "summary": "2.1市民关注案件分类统计接口（已废弃）",
+        "description": "<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">镇街列表：</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">南城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">万江街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">松山湖街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">莞城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">茶山镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">厚街镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">道滘镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">洪梅镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">望牛墩镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">高埗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">横沥镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东坑镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">寮步镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">常平镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">樟木头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">沙田镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">麻涌镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">中堂镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石碣镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石龙镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石排镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">企石镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">桥头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">谢岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">清溪镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">凤岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">塘厦镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">虎门镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">长安镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">黄江镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大朗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大岭山镇</span>",
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "年月，格式yyyy-MM",
+            "type": "string"
+          },
+          {
+            "name": "townName",
+            "in": "query",
+            "required": false,
+            "description": "镇街名（传空值则统计东莞全市）",
+            "type": "string"
+          },
+          {
+            "name": "raw",
+            "in": "body",
+            "description": "raw paramter",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "RATE": {
+                        "type": "number",
+                        "description": "占比（单位%）"
+                      },
+                      "NUM": {
+                        "type": "number",
+                        "description": "数量"
+                      },
+                      "NAME": {
+                        "type": "string",
+                        "description": "类别名"
+                      }
+                    }
+                  },
+                  "description": "降序排列的市民关注类案件的类别占比排名列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/collectionCase": {
+      "get": {
+        "tags": [
+          "智慧城管"
+        ],
+        "summary": "2.2自行采集案件分类统计接口(已废弃)",
+        "description": "<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">南城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">万江街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">松山湖街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">莞城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">茶山镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">厚街镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">道滘镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">洪梅镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">望牛墩镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">高埗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">横沥镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东坑镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">寮步镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">常平镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">樟木头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">沙田镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">麻涌镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">中堂镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石碣镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石龙镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石排镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">企石镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">桥头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">谢岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">清溪镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">凤岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">塘厦镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">虎门镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">长安镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">黄江镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大朗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大岭山镇</span>",
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "年月，格式yyyy-MM",
+            "type": "string"
+          },
+          {
+            "name": "townName",
+            "in": "query",
+            "required": false,
+            "description": "镇街名（传空值则统计东莞全市）",
+            "type": "string"
+          },
+          {
+            "name": "raw",
+            "in": "body",
+            "description": "raw paramter",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "RATE": {
+                        "type": "number",
+                        "description": "占比（单位%）"
+                      },
+                      "NUM": {
+                        "type": "number",
+                        "description": "数量"
+                      },
+                      "NAME": {
+                        "type": "string",
+                        "description": "类别名"
+                      }
+                    },
+                    "required": [
+                      "RATE",
+                      "NUM",
+                      "NAME"
+                    ]
+                  },
+                  "description": "降序排列的自行采集类案件的类别占比排名列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/getCaseMetrics": {
+      "get": {
+        "tags": [
+          "智慧城管"
+        ],
+        "summary": "2.8案件指标接口",
+        "description": "",
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "raw",
+            "in": "body",
+            "description": "raw paramter",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "archiveNum": {
+                      "type": "number",
+                      "description": "系统结案件数"
+                    },
+                    "reportNum": {
+                      "type": "number",
+                      "description": "系统总上报数"
+                    },
+                    "instNumMonth": {
+                      "type": "number",
+                      "description": "本月立案数"
+                    },
+                    "instRate": {
+                      "type": "number",
+                      "description": "系统立案率"
+                    },
+                    "instNum": {
+                      "type": "number",
+                      "description": "系统立案数"
+                    },
+                    "archiveRate": {
+                      "type": "number",
+                      "description": "系统结案率"
+                    }
+                  },
+                  "description": "案件指标结果"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/highCaseTypeWarn": {
+      "get": {
+        "tags": [
+          "智慧城管"
+        ],
+        "summary": "2.9高发案件类型预警统计接口",
+        "description": "<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">镇街列表：</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">南城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">万江街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">松山湖街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">莞城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">茶山镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">厚街镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">道滘镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">洪梅镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">望牛墩镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">高埗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">横沥镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东坑镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">寮步镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">常平镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">樟木头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">沙田镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">麻涌镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">中堂镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石碣镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石龙镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石排镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">企石镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">桥头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">谢岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">清溪镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">凤岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">塘厦镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">虎门镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">长安镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">黄江镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大朗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大岭山镇</span>",
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "年月，格式yyyy-MM",
+            "type": "string"
+          },
+          {
+            "name": "townName",
+            "in": "query",
+            "required": false,
+            "description": "镇街名（传空值则统计东莞全市）",
+            "type": "string"
+          },
+          {
+            "name": "raw",
+            "in": "body",
+            "description": "raw paramter",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "MAINTYPENAME": {
+                        "type": "string",
+                        "description": "案件大类名称"
+                      },
+                      "RATE": {
+                        "type": "number",
+                        "description": "占比（单位%）"
+                      },
+                      "NUM": {
+                        "type": "number",
+                        "description": "该大类案件的案件数量"
+                      }
+                    },
+                    "required": [
+                      "MAINTYPENAME",
+                      "RATE",
+                      "NUM"
+                    ]
+                  },
+                  "description": "降序排列的案件大类占比排名列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/thermal/perCapitaWasteWarn": {
+      "get": {
+        "tags": [
+          "首页"
+        ],
+        "summary": "1.10人均垃圾超标预警接口",
+        "description": "",
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "传年则查该年的，传年月则查该月的，传年月日则查该日的。 \n\n年（格式yyyy）\n\n年月（格式yyyy-MM）\n\n年月日（格式yyyy-MM-dd）\n\n\n\n因当月数据不全，建议每次查上月的",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "rubbishavewarn": {
+                      "type": "number",
+                      "description": "超过人均1.1kg的镇街数量（预警数）"
+                    },
+                    "streetList": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "averagenum": {
+                            "type": "number",
+                            "description": "人均垃圾率"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "镇街名称"
+                          },
+                          "actualnum": {
+                            "type": "number",
+                            "description": "实际产生量（单位kg）"
+                          },
+                          "population": {
+                            "type": "number",
+                            "description": " 人口数"
+                          }
+                        },
+                        "required": [
+                          "averagenum",
+                          "name",
+                          "actualnum",
+                          "population"
+                        ]
+                      },
+                      "description": "镇街详情"
+                    }
+                  },
+                  "description": "预警数以及各镇街详情列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/highIncidenceCaseWarn": {
+      "get": {
+        "tags": [
+          "首页"
+        ],
+        "summary": "1.11区域案件高发预警接口",
+        "description": "",
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "传年则查该年的，传年月则查该月的，传年月日则查该日的。 \n\n\n\n年（格式yyyy）\n\n年月（格式yyyy-MM）\n\n年月日（格式yyyy-MM-dd）",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "overwarn": {
+                      "type": "number",
+                      "description": "环比超过10%的镇街数量（预警数）"
+                    },
+                    "streetList": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "lastnum": {
+                            "type": "number",
+                            "description": "上期数量"
+                          },
+                          "num": {
+                            "type": "number",
+                            "description": "本期数量"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": " 镇街名称"
+                          },
+                          "riserate": {
+                            "type": "number",
+                            "description": "同比增长率（-代表下降）"
+                          }
+                        },
+                        "required": [
+                          "lastnum",
+                          "num",
+                          "name",
+                          "riserate"
+                        ]
+                      },
+                      "description": "镇街详情"
+                    }
+                  },
+                  "description": "预警数以及各镇街详情列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/thermal/furnaceTemperatureDetail": {
+      "get": {
+        "tags": [
+          "首页"
+        ],
+        "summary": "1.13热电厂炉温情况详情接口",
+        "description": "",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": false,
+            "description": "麻涌餐厨处理厂\n\n麻涌环保热电厂\n\n测试垃圾处理厂\n\n横沥环保热电厂\n\n市区环保热电厂\n\n厚街环保热电厂",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "tempmax": {
+                        "type": "number",
+                        "description": "标准温度上限，（单位℃）"
+                      },
+                      "lu": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "luming": {
+                              "type": "string",
+                              "description": "焚烧炉名"
+                            },
+                            "temp": {
+                              "type": "number",
+                              "description": "炉温超标数量"
+                            },
+                            "guancedian": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "guancedianming": {
+                                    "type": "string",
+                                    "description": "监测点名"
+                                  },
+                                  "detail": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "temperature": {
+                                          "type": "number",
+                                          "description": "监测温度（单位℃）"
+                                        },
+                                        "timestr": {
+                                          "type": "string",
+                                          "description": "监测时间"
+                                        }
+                                      },
+                                      "required": [
+                                        "temperature",
+                                        "timestr"
+                                      ]
+                                    },
+                                    "description": "监测点详情"
+                                  }
+                                },
+                                "required": [
+                                  "guancedianming",
+                                  "detail"
+                                ]
+                              },
+                              "description": "监测点"
+                            }
+                          },
+                          "required": [
+                            "luming",
+                            "temp",
+                            "guancedian"
+                          ]
+                        },
+                        "description": "焚烧炉列表"
+                      },
+                      "changming": {
+                        "type": "string",
+                        "description": "热电厂名"
+                      },
+                      "tempmin": {
+                        "type": "number",
+                        "description": "标准温度上限，单位（℃）"
+                      }
+                    },
+                    "required": [
+                      "tempmax",
+                      "lu",
+                      "changming",
+                      "tempmin"
+                    ]
+                  },
+                  "description": "镇街公厕信息列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/thermal/gasEmissionDetail": {
+      "get": {
+        "tags": [
+          "首页"
+        ],
+        "summary": "1.14热电厂气体排放详情接口",
+        "description": "",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": false,
+            "description": "麻涌餐厨处理厂\n\n麻涌环保热电厂\n\n测试垃圾处理厂\n\n横沥环保热电厂\n\n市区环保热电厂\n\n厚街环保热电厂",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "lu": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "luming": {
+                              "type": "string",
+                              "description": "焚烧炉名"
+                            },
+                            "gas": {
+                              "type": "number",
+                              "description": "烟气状态超标数量"
+                            },
+                            "dates": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "standard": {
+                                    "type": "string",
+                                    "description": "当前标准值"
+                                  },
+                                  "fumetypename": {
+                                    "type": "string",
+                                    "description": "烟气指标名"
+                                  },
+                                  "detail": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "timestr": {
+                                          "type": "string",
+                                          "description": "监测时间"
+                                        },
+                                        "value": {
+                                          "type": "number",
+                                          "description": "监测值  （氮氧化合物\tmg/m³  烟气工况瞬时流量\tm³/s  二氧化硫\tmg/m³  湿度\t%  一氧化碳\tmg/m³  压力\tPa  烟尘\tmg/m³  氯化氢\tmg/m³  温度\t℃  烟气标杆瞬时流量\tm³/s）"
+                                        }
+                                      },
+                                      "required": [
+                                        "timestr",
+                                        "value"
+                                      ]
+                                    },
+                                    "description": "指标详情"
+                                  }
+                                },
+                                "required": [
+                                  "standard",
+                                  "fumetypename",
+                                  "detail"
+                                ]
+                              },
+                              "description": "烟气情况"
+                            }
+                          }
+                        },
+                        "description": "焚烧炉列表"
+                      },
+                      "changming": {
+                        "type": "string",
+                        "description": "热电厂名"
+                      }
+                    }
+                  },
+                  "description": "镇街公厕信息列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/thermal/wasteIncinerationWarn": {
+      "get": {
+        "tags": [
+          "首页"
+        ],
+        "summary": "1.15热电厂垃圾焚烧情况预警",
+        "description": "",
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "年（格式yyyy）\n\n年月（格式yyyy-MM）",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "overwarn": {
+                      "type": "number",
+                      "description": "超量热电厂数"
+                    },
+                    "tempwarn": {
+                      "type": "number",
+                      "description": "炉温异常预警数"
+                    },
+                    "gaswarn": {
+                      "type": "number",
+                      "description": "烟气预警数"
+                    },
+                    "rdcList": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "temp": {
+                            "type": "number",
+                            "description": "实时炉温状态  0：正常  1：异常  2：数据失联"
+                          },
+                          "contractrate": {
+                            "type": "number",
+                            "description": "执行率"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "热电厂名"
+                          },
+                          "gas": {
+                            "type": "number",
+                            "description": "实时烟气状态  0：正常  1：异常  2：数据失联"
+                          },
+                          "contractnum": {
+                            "type": "number",
+                            "description": "年/月合同量"
+                          },
+                          "actualnum": {
+                            "type": "number",
+                            "description": "实际垃圾量（单位吨）"
+                          }
+                        },
+                        "required": [
+                          "temp",
+                          "contractrate",
+                          "name",
+                          "gas",
+                          "contractnum",
+                          "actualnum"
+                        ]
+                      },
+                      "description": "热电厂列表"
+                    }
+                  },
+                  "description": "镇街公厕信息列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/thermal/factoryRubbishWeight": {
+      "get": {
+        "tags": [
+          "首页"
+        ],
+        "summary": "1.16热电厂接收的垃圾量接口",
+        "description": "",
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "年（格式yyyy）\n\n年月（格式yyyy-MM）",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "overwarn": {
+                      "type": "number",
+                      "description": "超量热电厂数"
+                    },
+                    "tempwarn": {
+                      "type": "number",
+                      "description": "炉温异常预警数"
+                    },
+                    "gaswarn": {
+                      "type": "number",
+                      "description": "烟气预警数"
+                    },
+                    "rdcList": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "temp": {
+                            "type": "number",
+                            "description": "实时炉温状态  0：正常  1：异常  2：数据失联"
+                          },
+                          "contractrate": {
+                            "type": "number",
+                            "description": "执行率"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "热电厂名"
+                          },
+                          "gas": {
+                            "type": "number",
+                            "description": "实时烟气状态  0：正常  1：异常  2：数据失联"
+                          },
+                          "contractnum": {
+                            "type": "number",
+                            "description": "年/月合同量"
+                          },
+                          "actualnum": {
+                            "type": "number",
+                            "description": "实际垃圾量（单位吨）"
+                          }
+                        },
+                        "required": [
+                          "temp",
+                          "contractrate",
+                          "name",
+                          "gas",
+                          "contractnum",
+                          "actualnum"
+                        ]
+                      },
+                      "description": "热电厂列表"
+                    }
+                  },
+                  "description": "镇街公厕信息列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/outTimeCase": {
+      "get": {
+        "tags": [
+          "首页"
+        ],
+        "summary": "1.1智慧城管超时案件统计接口（已废弃）",
+        "description": "<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">镇街列表：</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">南城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">万江街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">松山湖街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">莞城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">茶山镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">厚街镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">道滘镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">洪梅镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">望牛墩镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">高埗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">横沥镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东坑镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">寮步镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">常平镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">樟木头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">沙田镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">麻涌镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">中堂镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石碣镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石龙镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石排镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">企石镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">桥头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">谢岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">清溪镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">凤岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">塘厦镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">虎门镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">长安镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">黄江镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大朗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大岭山镇</span>",
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "townName",
+            "in": "query",
+            "required": false,
+            "description": "镇街名（传空值则统计东莞全市）",
+            "type": "string"
+          },
+          {
+            "name": "raw",
+            "in": "body",
+            "description": "raw paramter",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "yoy": {
+                      "type": "number",
+                      "description": "日同比（正数为上升，负数为下降）"
+                    },
+                    "qoq": {
+                      "type": "number",
+                      "description": "日环比（正数为上升，负数为下降）"
+                    },
+                    "count": {
+                      "type": "number",
+                      "description": "超时案件数"
+                    }
+                  },
+                  "description": "统计结果"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/wasteIncinerationWarn": {
+      "get": {
+        "tags": [
+          "首页"
+        ],
+        "summary": "1.2垃圾焚烧预警统计接口",
+        "description": "<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">镇街列表：</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">南城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">万江街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">松山湖街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">莞城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">茶山镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">厚街镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">道滘镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">洪梅镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">望牛墩镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">高埗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">横沥镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东坑镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">寮步镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">常平镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">樟木头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">沙田镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">麻涌镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">中堂镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石碣镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石龙镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石排镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">企石镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">桥头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">谢岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">清溪镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">凤岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">塘厦镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">虎门镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">长安镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">黄江镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大朗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大岭山镇</span>",
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "townName",
+            "in": "query",
+            "required": false,
+            "description": "镇街名（传空值则统计东莞全市）",
+            "type": "string"
+          },
+          {
+            "name": "raw",
+            "in": "body",
+            "description": "raw paramter",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "yoy": {
+                      "type": "string",
+                      "description": "日同比（正数为上升，负数为下降）"
+                    },
+                    "qoq": {
+                      "type": "string",
+                      "description": "日环比（正数为上升，负数为下降）"
+                    },
+                    "count": {
+                      "type": "number",
+                      "description": "超时案件数"
+                    }
+                  },
+                  "description": "统计结果"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/cityscapeSanitation": {
+      "get": {
+        "tags": [
+          "首页"
+        ],
+        "summary": "1.3市容环卫模块统计接口",
+        "description": "",
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "年月日，格式yyyy-MM-dd",
+            "type": "string"
+          },
+          {
+            "name": "raw",
+            "in": "body",
+            "description": "raw paramter",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "waste": {
+                      "type": "number",
+                      "description": "生活垃圾产量"
+                    },
+                    "san": {
+                      "type": "number",
+                      "description": "环卫车辆在岗数"
+                    },
+                    "sanTotal": {
+                      "type": "number",
+                      "description": "环卫车辆总数"
+                    },
+                    "dinner": {
+                      "type": "number",
+                      "description": "餐厨车辆在岗数"
+                    },
+                    "dinnerTotal": {
+                      "type": "number",
+                      "description": "餐厨车辆总数"
+                    }
+                  },
+                  "description": "统计结果"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/wisdomCityManagement": {
+      "get": {
+        "tags": [
+          "首页"
+        ],
+        "summary": "1.4智慧城管模块统计接口",
+        "description": "<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">镇街列表：</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">南城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">万江街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">松山湖街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">莞城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">茶山镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">厚街镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">道滘镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">洪梅镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">望牛墩镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">高埗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">横沥镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东坑镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">寮步镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">常平镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">樟木头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">沙田镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">麻涌镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">中堂镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石碣镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石龙镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石排镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">企石镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">桥头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">谢岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">清溪镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">凤岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">塘厦镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">虎门镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">长安镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">黄江镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大朗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大岭山镇</span>",
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "townName",
+            "in": "query",
+            "required": false,
+            "description": "镇街名（传空值则统计东莞全市）",
+            "type": "string"
+          },
+          {
+            "name": "raw",
+            "in": "body",
+            "description": "raw paramter",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "countOfMonth": {
+                      "type": "number",
+                      "description": "本月案件数"
+                    },
+                    "dealRate": {
+                      "type": "number",
+                      "description": "按时处置率（单位%）"
+                    },
+                    "count": {
+                      "type": "number",
+                      "description": "案件数"
+                    },
+                    "endRate": {
+                      "type": "number",
+                      "description": "按时结案率（单位%）"
+                    }
+                  },
+                  "description": "统计结果"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/urbanManagement": {
+      "get": {
+        "tags": [
+          "首页"
+        ],
+        "summary": "1.5城管执法统计接口",
+        "description": "<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">镇街列表：</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">南城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">万江街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">松山湖街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">莞城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">茶山镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">厚街镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">道滘镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">洪梅镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">望牛墩镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">高埗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">横沥镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东坑镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">寮步镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">常平镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">樟木头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">沙田镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">麻涌镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">中堂镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石碣镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石龙镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石排镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">企石镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">桥头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">谢岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">清溪镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">凤岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">塘厦镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">虎门镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">长安镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">黄江镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大朗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大岭山镇</span>",
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "townName",
+            "in": "query",
+            "required": false,
+            "description": "镇街名（传空值则统计东莞全市）",
+            "type": "string"
+          },
+          {
+            "name": "raw",
+            "in": "body",
+            "description": "raw paramter",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "dutyEmp": {
+                      "type": "number",
+                      "description": "在岗人数"
+                    },
+                    "totalEmp": {
+                      "type": "number",
+                      "description": "总人数"
+                    },
+                    "dealOfMonth": {
+                      "type": "number",
+                      "description": "本月处置案件数"
+                    },
+                    "sudCase": {
+                      "type": "number",
+                      "description": "突发事件数"
+                    },
+                    "dealCase": {
+                      "type": "number",
+                      "description": "处理案件数量"
+                    }
+                  },
+                  "description": "统计结果"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/thermal/wasteIncinerationExcess": {
+      "get": {
+        "tags": [
+          "首页"
+        ],
+        "summary": "1.9镇街垃圾焚烧合同超标预警接口",
+        "description": "<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">镇街列表：</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">黄江镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">麻涌镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">高埗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">长安镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">道滘镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">谢岗</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">虎门镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">莞城</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">茶山镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石龙镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石碣镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石排镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">清溪</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">洪梅镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">沙田镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">横沥镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">樟木头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">桥头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">松山湖</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">望牛墩镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">恒辉清洁</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">常平镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">寮步镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大朗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大岭山镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">塘厦镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">园林管理所</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">厚街镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">南城</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">凤岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">企石镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">中堂镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东莞餐厨</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东城</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东坑镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">万江</span>",
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "年（格式yyyy）\n\n年月（格式yyyy-MM）",
+            "type": "string"
+          },
+          {
+            "name": "townName",
+            "in": "query",
+            "required": false,
+            "description": "镇街名（传空值则统计东莞全市）",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "overwarn": {
+                      "type": "number",
+                      "description": "超过合同执行率的镇街数量（预警数）"
+                    },
+                    "streetList": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "contractrate": {
+                            "type": "number",
+                            "description": "执行率"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "镇街名称(会有非镇街来源的垃圾)"
+                          },
+                          "contractnum": {
+                            "type": "number",
+                            "description": " 合同量（单位吨）"
+                          },
+                          "actualnum": {
+                            "type": "number",
+                            "description": "实际产生量（单位吨）"
+                          }
+                        },
+                        "required": [
+                          "contractrate",
+                          "name",
+                          "contractnum",
+                          "actualnum"
+                        ]
+                      },
+                      "description": "镇街详情"
+                    }
+                  },
+                  "description": "预警数以及各镇街详情列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/outTimeCaseMonth": {
+      "get": {
+        "tags": [
+          "首页"
+        ],
+        "summary": "2.18智慧城管月度超时案件接口",
+        "description": "<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">镇街列表：</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">南城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">万江街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">松山湖街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">莞城街道</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">茶山镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">厚街镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">道滘镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">洪梅镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">望牛墩镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">高埗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">横沥镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东坑镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">寮步镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">常平镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">樟木头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">沙田镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">麻涌镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">中堂镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石碣镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石龙镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石排镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">企石镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">桥头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">谢岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">清溪镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">凤岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">塘厦镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">虎门镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">长安镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">黄江镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大朗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大岭山镇</span>",
+        "parameters": [
+          {
+            "name": "townName",
+            "in": "query",
+            "required": false,
+            "description": "镇街名（传空值则统计东莞全市）",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "qoq": {
+                      "type": "number",
+                      "description": "月环比（单位%）"
+                    },
+                    "yoy": {
+                      "type": "number",
+                      "description": "月同比（单位%）"
+                    },
+                    "count": {
+                      "type": "number",
+                      "description": "本月超时案件数"
+                    }
+                  },
+                  "description": "统计结果"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/restroom/getRestroomData": {
+      "get": {
+        "tags": [
+          "地图相关"
+        ],
+        "summary": "1.12公厕资源接口",
+        "description": "<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">镇街列表：</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">黄江镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">麻涌镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">高埗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">长安镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">道滘镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">谢岗</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">虎门镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">莞城</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">茶山镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石龙镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石碣镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">石排镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">清溪</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">洪梅镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">沙田镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">横沥镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">樟木头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">桥头镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">松山湖</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">望牛墩镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">恒辉清洁</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">常平镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">寮步镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大朗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">大岭山镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">塘厦镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">园林管理所</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">厚街镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">南城</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">凤岗镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">企石镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">中堂镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东莞餐厨</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东城</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">东坑镇</span>\n<span class=\"colour\" style=\"color:rgb(73, 73, 73)\">万江</span>",
+        "parameters": [
+          {
+            "name": "townName",
+            "in": "query",
+            "required": false,
+            "description": "镇街名（传空值则统计东莞全市）",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "RESTROOMLIST": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "TOILETNAME": {
+                              "type": "string",
+                              "description": "公厕名称"
+                            },
+                            "DETAILADRESSE": {
+                              "type": "string",
+                              "description": "详细地址"
+                            },
+                            "M_CONTACT_NAME": {
+                              "type": "string",
+                              "description": "管理责任人姓名"
+                            },
+                            "M_CLEANERS": {
+                              "type": "number",
+                              "description": "保洁员人数（位）"
+                            },
+                            "OPENTIME": {
+                              "type": "string",
+                              "description": "开放时间（格式yyyy-MM）"
+                            },
+                            "LONGITUDE": {
+                              "type": "number",
+                              "description": "经度"
+                            },
+                            "TOILETTYPE": {
+                              "type": "string",
+                              "description": "公厕类别（独立式（星级、一类、二类、三类））"
+                            },
+                            "M_COMPANY": {
+                              "type": "string",
+                              "description": "管理责任单位名称"
+                            },
+                            "M_CONTACT_PHONE": {
+                              "type": "string",
+                              "description": "管理责任人电话"
+                            },
+                            "UPDATESTATUS": {
+                              "type": "number",
+                              "description": "升级改造情况（已完成=1，未完成=0）"
+                            },
+                            "LATITUDE": {
+                              "type": "number",
+                              "description": "纬度"
+                            }
+                          },
+                          "required": [
+                            "TOILETNAME",
+                            "DETAILADRESSE",
+                            "M_CONTACT_NAME",
+                            "M_CLEANERS",
+                            "OPENTIME",
+                            "LONGITUDE",
+                            "TOILETTYPE",
+                            "M_COMPANY",
+                            "M_CONTACT_PHONE",
+                            "UPDATESTATUS",
+                            "LATITUDE"
+                          ]
+                        }
+                      },
+                      "STREETID": {
+                        "type": "number",
+                        "description": "镇街id"
+                      },
+                      "STREETNAME": {
+                        "type": "string",
+                        "description": "镇街名"
+                      },
+                      "RESTROOMNUM": {
+                        "type": "number",
+                        "description": "公共厕所数量"
+                      }
+                    }
+                  },
+                  "description": "镇街公厕信息列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/todayCaseTown": {
+      "get": {
+        "tags": [
+          "地图相关"
+        ],
+        "summary": "1.6（未使用，基本废弃）首页 - table",
+        "description": "",
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "raw",
+            "in": "body",
+            "description": "raw paramter",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "ques": {
+                        "type": "number",
+                        "description": "问题量（单位%）"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "镇街名"
+                      },
+                      "wow": {
+                        "type": "string",
+                        "description": "周环比（单位%，正数为上升，负数为下降）"
+                      }
+                    },
+                    "required": [
+                      "ques",
+                      "name",
+                      "wow"
+                    ]
+                  },
+                  "description": "镇街排名列表"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/getMapDotData": {
+      "get": {
+        "tags": [
+          "地图相关"
+        ],
+        "summary": "1.8首页 - 地图所有",
+        "description": "",
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "description": "1：环卫清洁车\n\n2：公厕（暂无数据）\n\n3：执法员\n\n4：考评员\n\n5：转运站",
+            "type": "string"
+          },
+          {
+            "name": "raw",
+            "in": "body",
+            "description": "raw paramter",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "title": "empty object",
+              "properties": {}
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/getCaseMetricsAllTown": {
+      "get": {
+        "tags": [
+          "地图相关"
+        ],
+        "summary": "2.15 （重要）各镇街案件指标",
+        "description": "",
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "\t\n传年则查该年的，传年月则查该月的，传年月日则查该日的。 \n\n\n\n年（格式yyyy）\n\n年月（格式yyyy-MM）\n\n年月日（格式yyyy-MM-dd，传空值时查全时期）",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string",
+                  "description": "请求结果"
+                },
+                "code": {
+                  "type": "number",
+                  "description": "200 成功"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "allIndex": {
+                      "type": "object",
+                      "properties": {
+                        "archivenum": {
+                          "type": "number",
+                          "description": "结案数"
+                        },
+                        "reportnum": {
+                          "type": "number",
+                          "description": "上报数"
+                        },
+                        "disposeRate": {
+                          "type": "number",
+                          "description": "处置率（单位%）"
+                        },
+                        "disposenum": {
+                          "type": "number",
+                          "description": "处置数"
+                        },
+                        "instRate": {
+                          "type": "number",
+                          "description": "立案率（单位%）"
+                        },
+                        "overtimenum": {
+                          "type": "number",
+                          "description": "案件超时数"
+                        },
+                        "instnum": {
+                          "type": "number",
+                          "description": "立案数"
+                        },
+                        "dealingnum": {
+                          "type": "number",
+                          "description": "在办案件数"
+                        },
+                        "archiveRate": {
+                          "type": "number",
+                          "description": "结案率（单位%）"
+                        }
+                      },
+                      "description": "全市统计结果"
+                    },
+                    "streetList": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "archiveNum": {
+                            "type": "number",
+                            "description": "结案数"
+                          },
+                          "reportNum": {
+                            "type": "number",
+                            "description": "上报数"
+                          },
+                          "disposeRate": {
+                            "type": "number",
+                            "description": "处置率（单位%）"
+                          },
+                          "disposeNum": {
+                            "type": "number",
+                            "description": "处置数"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "镇街名"
+                          },
+                          "instRate": {
+                            "type": "number",
+                            "description": "立案率（单位%）"
+                          },
+                          "instNum": {
+                            "type": "number",
+                            "description": "立案数"
+                          },
+                          "overtimenum": {
+                            "type": "number",
+                            "description": "案件超时数"
+                          },
+                          "dealingnum": {
+                            "type": "number",
+                            "description": "在办案件数"
+                          },
+                          "archiveRate": {
+                            "type": "number",
+                            "description": "结案率（单位%）"
+                          }
+                        },
+                        "required": [
+                          "archiveNum",
+                          "reportNum",
+                          "disposeRate",
+                          "disposeNum",
+                          "name",
+                          "instRate",
+                          "instNum",
+                          "overtimenum",
+                          "dealingnum",
+                          "archiveRate"
+                        ]
+                      },
+                      "description": "镇街统计结果"
+                    }
+                  },
+                  "description": "统计结果"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/townCaseNum": {
+      "get": {
+        "tags": [
+          "地图相关"
+        ],
+        "summary": "2.19城管 - 人均案件数量热力图",
+        "description": "",
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "title": "empty object",
+              "properties": {}
+            }
+          }
+        }
+      }
+    },
+    "/dgmap/app/interface/wisdomCityManagementSearch": {
+      "get": {
+        "tags": [
+          "地图相关"
+        ],
+        "summary": "2.5智慧城管 - 右侧table",
+        "description": "",
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "timeStr",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "raw",
+            "in": "body",
+            "description": "raw paramter",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "title": "empty object",
+              "properties": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

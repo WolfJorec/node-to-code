@@ -3,7 +3,8 @@ const path = require("path");
 
 //引入数据源
 // const profileData = require('./json/api.json')
-const profileData = require('./json/swaggerApi.json')
+// const profileData = require('./json/swaggerApi.json')
+const profileData = require('./json/swaggerApi2.json')
 
 //引入文件模板
 let template = require("./template");
@@ -24,20 +25,43 @@ var getProperties = target => Object.entries(target).reduce((obj, [key, val]) =>
     return obj
 }, {})
 
+var getStr = arr => {
+    let str = ''
+    arr.forEach(v => { if(v.in === 'query') str+= `${v.name}=&` });
+
+    return str = str.substr(0,str.length-1)
+}
+
 var result = Object.entries(profileData.paths).reduce((ary, [k, v]) => {
-    var { summary, parameters } = v.post
-    var properties = parameters[0].schema.properties
-    var newObj = properties ? getProperties(properties) : null
-    var type = Object.keys(v)[0]
+    if (v.post) {
+        var { summary, parameters } = v.post
+        var properties = parameters[0].schema.properties
+        var newObj = properties ? getProperties(properties) : null
+        var type = Object.keys(v)[0]
 
-    const url = k
-    const name = summary
-    const params = newObj
-    const method = type
+        const url = k
+        const name = summary
+        const params = newObj
+        const method = type
 
-    const obj = { url, name, params, method }
+        const obj = { url, name, params, method }
+        return [...ary, obj]
 
-    return [...ary, obj]
+    } else {
+        var { summary, parameters } = v.get
+        var properties = parameters
+        var newStr = properties ? getStr(properties) : ''
+        var type = Object.keys(v)[0]
+
+        const url = k
+        const name = summary
+        const params = newStr
+        const method = type
+
+        const obj = { url, name, params, method }
+        return [...ary, obj]
+    }
+
 }, [])
 
 // 创建文件并生成代码
