@@ -2,7 +2,7 @@
   "name": "node-to-code",
   "version": "1.0.0",
   "description": "自动生成CV代码",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,10 +16,7 @@
     "url": "https://github.com/XmanLin/node-to-code/issues"
   },
   "homepage": "https://github.com/XmanLin/node-to-code#readme",
-  "devDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
+  "devDependencies": {},
   "dependencies": {
     "art-template": "^4.13.2",
     "vscode-debugadapter": "^1.40.0"
