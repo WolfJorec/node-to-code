@@ -1,0 +1,954 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "跨境司机",
+    "version": "last"
+  },
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "PC端统计",
+      "description": null
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/actuator/direct/readModuleRedisData?id=2020082605": {
+      "post": {
+        "tags": [
+          "PC端统计"
+        ],
+        "summary": "个人司机明细",
+        "description": "<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">[</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"202008260501\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"remark\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"司机明细\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"data\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: [</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"gender\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"男\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"native\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"港籍\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"idcard_type\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"香港身份证\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"idcard\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"H07165272\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"address\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"葵涌村碧葵樓716室\",</span>\n                \"yueCode\":\"绿码\"\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            }</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        ]</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"202008260502\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"remark\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"个人司机申报明细\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"data\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: [</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">10012</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-18\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-18\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"DE'LONGHI KENWOOD A. P. A. LIMITED\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粤ZGA39港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"has_license\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"是\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-16 00:00:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"阳性\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"state\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"正常\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">10012</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-25\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-25\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"DE'LONGHI KENWOOD A. P. A. LIMITED\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粤ZGA39港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"has_license\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"是\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-24 00:00:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"阴性\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"state\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"正常\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">10012</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-26\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-26\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"DE'LONGHI KENWOOD A. P. A. LIMITED\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粤ZGA39港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"has_license\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"是\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-25 00:00:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"阴性\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"state\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"正常\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">10012</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-27\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-27\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"DE'LONGHI KENWOOD A. P. A. LIMITED\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粤ZGA39港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"has_license\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"是\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-26 00:00:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"阴性\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">                </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"state\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"正常\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            }</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        ]</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    }</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">]</span>",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "mock": {
+                    "mock": "2020082605"
+                  },
+                  "description": "模块ID"
+                },
+                "params": {
+                  "type": "object",
+                  "properties": {
+                    "driverId": {
+                      "type": "number",
+                      "mock": {
+                        "mock": "10012"
+                      },
+                      "description": "司机ID"
+                    }
+                  },
+                  "required": [
+                    "driverId"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "params"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "remark": {
+                    "type": "string"
+                  },
+                  "data": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "address": {
+                          "type": "string",
+                          "description": "司机住宿地址"
+                        },
+                        "gender": {
+                          "type": "string",
+                          "description": "性别"
+                        },
+                        "native": {
+                          "type": "string",
+                          "description": "籍贯"
+                        },
+                        "idcard": {
+                          "type": "string",
+                          "description": "证件号码"
+                        },
+                        "yueCode": {
+                          "type": "string",
+                          "description": "粤康码"
+                        },
+                        "idcard_type": {
+                          "type": "string",
+                          "description": "证件类型"
+                        },
+                        "leave_dg_time": {
+                          "type": "string",
+                          "description": "离莞时间"
+                        },
+                        "driver_id": {
+                          "type": "number",
+                          "description": "司机ID"
+                        },
+                        "driver_car_num": {
+                          "type": "string",
+                          "description": "车牌"
+                        },
+                        "has_license": {
+                          "type": "string",
+                          "description": "是否拥有入境口岸所在地豁免证明"
+                        },
+                        "arrive_dg_time": {
+                          "type": "string",
+                          "description": "来莞时间"
+                        },
+                        "nat_result": {
+                          "type": "string",
+                          "description": "核酸检测结果"
+                        },
+                        "nat_time": {
+                          "type": "number",
+                          "description": "核酸检测时间"
+                        },
+                        "state": {
+                          "type": "string",
+                          "description": "状态"
+                        },
+                        "driver_company_name": {
+                          "type": "string",
+                          "description": "司机公司名称"
+                        }
+                      },
+                      "required": [
+                        "leave_dg_time",
+                        "driver_id",
+                        "driver_car_num",
+                        "has_license",
+                        "arrive_dg_time",
+                        "nat_result",
+                        "nat_time",
+                        "state",
+                        "driver_company_name",
+                        "yueCode",
+                        "idcard_type",
+                        "idcard",
+                        "gender",
+                        "native",
+                        "address"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "id",
+                  "remark",
+                  "data"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/actuator/direct/readModuleRedisData?id=2020082606": {
+      "post": {
+        "tags": [
+          "PC端统计"
+        ],
+        "summary": "个人司机轨迹明细",
+        "description": "[\n  {\n    \"id\": \"202008260601\",\n    \"remark\": \"个人司机违规列表\",\n    \"data\": [\n      {\n        \"driver_name\": \"曹鑫波109\",\n        \"driver\\_car\\_num\": \"222\"\\,\n        \"wg_action\": \"多岁的\",\n        \"report_date\": \"2020-08-27\"\n      }\n    ]\n  },\n  {\n    \"id\": \"202008260605\",\n    \"remark\": \"个人司机轨迹线\",\n    \"data\": [\n      {\n        \"actualPoints\": [\n          {\n            \"phone\": \"\",\n            \"contact\": \"\",\n            \"name\": \"测试-企业\",\n            \"id\": \"job-1011\",\n            \"time\": 1598471186000,\n            \"type\": \"打卡作业点\",\n            \"region\": \"测试专用镇街\"\n          },\n          {\n            \"phone\": \"\",\n            \"contact\": \"\",\n            \"name\": \"测试-企业\",\n            \"id\": \"job-1796\",\n            \"time\": 1598471186000,\n            \"type\": \"打卡作业点\",\n            \"region\": \"测试专用镇街\"\n          },\n          {\n            \"phone\": \"\",\n            \"contact\": \"\",\n            \"name\": \"pcc测试企业2\",\n            \"id\": \"job-1798\",\n            \"time\": 1598471186000,\n            \"type\": \"打卡作业点\",\n            \"region\": \"测试专用镇街\"\n          },\n          {\n            \"phone\": \"\",\n            \"contact\": \"\",\n            \"name\": \"pcc测试企业2\",\n            \"id\": \"job-5553\",\n            \"time\": 1598471186000,\n            \"type\": \"打卡作业点\",\n            \"region\": \"测试专用镇街\"\n          }\n        ],\n        \"expectPoints\": [\n          {\n            \"lastPoint\": \"否\",\n            \"phone\": \"18925782126\",\n            \"contact\": \"齐永伟\",\n            \"name\": \"东莞佳达星制衣有限公司\",\n            \"id\": \"job-1011\",\n            \"time\": \"\",\n            \"type\": \"预期作业点\",\n            \"region\": \"东城街道\"\n          },\n          {\n            \"lastPoint\": \"否\",\n            \"phone\": \"1786046875\",\n            \"contact\": \"黄小姐\",\n            \"name\": \"OPPO 广东移运通信有限公司\",\n            \"id\": \"job-1796\",\n            \"time\": \"\",\n            \"type\": \"预期作业点\",\n            \"region\": \"东城街道\"\n          },\n          {\n            \"lastPoint\": \"否\",\n            \"phone\": \"13600299987\",\n            \"contact\": \"陈永新\",\n            \"name\": \"霄边社区兴鹏鞋厂\",\n            \"id\": \"job-1798\",\n            \"time\": \"\",\n            \"type\": \"预期作业点\",\n            \"region\": \"东城街道\"\n          },\n          {\n            \"lastPoint\": \"否\",\n            \"phone\": \"-\",\n            \"contact\": \"测试用户3\",\n            \"name\": \"-\",\n            \"id\": \"job-3\",\n            \"time\": \"\",\n            \"type\": \"预期作业点\",\n            \"region\": \"东城街道\"\n          },\n          {\n            \"lastPoint\": \"是\",\n            \"phone\": \"13650056809\",\n            \"contact\": \"梁玉娟\",\n            \"name\": \"东莞长盈制衣厂\",\n            \"id\": \"job-11\",\n            \"time\": \"\",\n            \"type\": \"预期作业点\",\n            \"region\": \"南城街道\"\n          },\n          {\n            \"lastPoint\": \"否\",\n            \"lng\": 113.798684,\n            \"phone\": \"13412465107\",\n            \"contact\": \"韩家琪\",\n            \"name\": \"下桥维也纳酒店\",\n            \"id\": \"stay-57\",\n            \"time\": \"2020-08-27\",\n            \"type\": \"预期留宿点\",\n            \"region\": \"东城街道\",\n            \"lat\": 23.065135\n          }\n        ]\n      }\n    ]\n  }\n]",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "mock": {
+                    "mock": "2020082606"
+                  },
+                  "description": "模块ID"
+                },
+                "params": {
+                  "type": "object",
+                  "properties": {
+                    "driverId": {
+                      "type": "number",
+                      "description": "司机ID",
+                      "mock": {
+                        "mock": "3843"
+                      }
+                    },
+                    "startTime": {
+                      "type": "string",
+                      "mock": {
+                        "mock": "2020-08-27"
+                      },
+                      "description": "开始时间"
+                    },
+                    "endTime": {
+                      "type": "string",
+                      "mock": {
+                        "mock": "2020-08-27"
+                      },
+                      "description": "结束时间"
+                    }
+                  },
+                  "required": [
+                    "driverId",
+                    "startTime",
+                    "endTime"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "params"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "remark": {
+                    "type": "string"
+                  },
+                  "data": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "driver_name": {
+                          "type": "string",
+                          "description": "司机名称"
+                        },
+                        "driver_car_num": {
+                          "type": "string",
+                          "description": "车牌"
+                        },
+                        "wg_action": {
+                          "type": "string",
+                          "description": "违规行为"
+                        },
+                        "report_date": {
+                          "type": "string",
+                          "description": "违规时间"
+                        },
+                        "actualPoints": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "phone": {
+                                "type": "string",
+                                "description": "联系电话"
+                              },
+                              "contact": {
+                                "type": "string",
+                                "description": "联系人"
+                              },
+                              "name": {
+                                "type": "string",
+                                "description": "名称"
+                              },
+                              "id": {
+                                "type": "string",
+                                "description": "id"
+                              },
+                              "time": {
+                                "type": "number",
+                                "description": "时间"
+                              },
+                              "type": {
+                                "type": "string",
+                                "description": "类型"
+                              },
+                              "region": {
+                                "type": "string",
+                                "description": "镇街"
+                              }
+                            },
+                            "required": [
+                              "phone",
+                              "contact",
+                              "name",
+                              "id",
+                              "time",
+                              "type",
+                              "region"
+                            ]
+                          },
+                          "description": "打卡点集合"
+                        },
+                        "expectPoints": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "lastPoint": {
+                                "type": "string",
+                                "description": "是否为最后点"
+                              },
+                              "phone": {
+                                "type": "string",
+                                "description": "联系电话"
+                              },
+                              "contact": {
+                                "type": "string",
+                                "description": "联系人"
+                              },
+                              "name": {
+                                "type": "string",
+                                "description": "名称"
+                              },
+                              "id": {
+                                "type": "string",
+                                "description": "id"
+                              },
+                              "time": {
+                                "type": "string",
+                                "description": "时间"
+                              },
+                              "type": {
+                                "type": "string",
+                                "description": "类型"
+                              },
+                              "region": {
+                                "type": "string",
+                                "description": "镇街"
+                              },
+                              "lng": {
+                                "type": "number",
+                                "description": "经度"
+                              },
+                              "lat": {
+                                "type": "number",
+                                "description": "维度"
+                              }
+                            },
+                            "required": [
+                              "lastPoint",
+                              "phone",
+                              "contact",
+                              "name",
+                              "id",
+                              "time",
+                              "type",
+                              "region"
+                            ]
+                          },
+                          "description": "申报点集合"
+                        }
+                      },
+                      "required": []
+                    }
+                  }
+                },
+                "required": [
+                  "id",
+                  "remark",
+                  "data"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/actuator/direct/search?id=202008260702": {
+      "post": {
+        "tags": [
+          "PC端统计"
+        ],
+        "summary": "作业点列表",
+        "description": "<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">{</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"202008260702\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"remark\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"作业点列表\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"data\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: [</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"746\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"豪特电器制品（东莞）有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_address\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"沙角社区鸿福路\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company_contact\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"郭甫志\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company\\_contact\\_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13712664292\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"1090\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞清溪捷达电器制品有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_address\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞市清溪镇厦坭村江背路3号\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company_contact\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"廖秋惠\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company\\_contact\\_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13509810997\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"787\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞精贸五金塑胶有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_address\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"广东省东莞市路东社区长青二路2号\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company_contact\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"周艳珍\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company\\_contact\\_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13724599791\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"1429\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞市雅图士电子科技有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_address\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"塘厦镇四黎南路25号\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company_contact\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"李有良\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company\\_contact\\_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13726420673\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"1057\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞友成精密模具有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_address\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞市桥头镇莲湖路岭头段二巷1号\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company_contact\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"陈满堂\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company\\_contact\\_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13926870765\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"603\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞市创富针织有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_address\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞市横沥镇村尾村三汇工业区2号\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company_contact\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"香锦芳\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company\\_contact\\_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13902611391\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"1745\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞长安品质电子制造有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_address\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞市长安镇新安工业园睦邻路9号\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company_contact\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"谭志佳\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company\\_contact\\_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13929282882\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"1963\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞横滨商标印刷有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_address\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞市长安镇乌沙第六工业区海滨路9号\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company_contact\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"梁永寅\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company\\_contact\\_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13377703194\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"1138\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞利基兆业精密五金有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_address\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞市清溪镇国营林场石田工业区林中二街\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company_contact\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"陈小琼\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company\\_contact\\_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13580825533\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"317\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞明信电子有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"deliver\\_company\\_address\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞市东坑镇骏达中路5号\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company_contact\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"曾东波\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"company\\_contact\\_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"18002829200\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        }</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    ],</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"pageSize\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">10</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"pageNum\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">1</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"total\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">188</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"totalPage\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">19</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"startIndex\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">1</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"endIndex\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">10</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">}</span>",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "mock": {
+                    "mock": "202008260702"
+                  }
+                },
+                "params": {
+                  "type": "object",
+                  "properties": {
+                    "pageSize": {
+                      "type": "number",
+                      "mock": {
+                        "mock": "12"
+                      }
+                    },
+                    "pageNum": {
+                      "type": "number",
+                      "mock": {
+                        "mock": "1"
+                      }
+                    },
+                    "townName": {
+                      "type": "string",
+                      "description": "镇街名",
+                      "mock": {
+                        "mock": "厚街镇"
+                      }
+                    }
+                  },
+                  "required": [
+                    "townName",
+                    "pageSize",
+                    "pageNum"
+                  ]
+                }
+              },
+              "required": [
+                "params",
+                "id"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "title": "empty object",
+              "properties": {}
+            }
+          }
+        }
+      }
+    },
+    "/actuator/direct/search": {
+      "post": {
+        "tags": [
+          "PC端统计"
+        ],
+        "summary": "司机列表分页",
+        "description": "<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">{</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"202008260401\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"remark\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"司机列表\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"data\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: [</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">2180</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"张国华\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13802242375\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粤ZCD95港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"state\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">1</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        }</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    ],</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"pageSize\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">20</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"pageNum\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">1</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"total\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">2</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"totalPage\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">1</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"startIndex\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">1</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"endIndex\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">20</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">}</span>",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "mock": {
+                    "mock": "202008260401"
+                  },
+                  "description": "语句ID"
+                },
+                "params": {
+                  "type": "object",
+                  "properties": {
+                    "pageSize": {
+                      "type": "number",
+                      "mock": {
+                        "mock": "10"
+                      },
+                      "description": "分页大小"
+                    },
+                    "pageNum": {
+                      "type": "number",
+                      "mock": {
+                        "mock": "1"
+                      },
+                      "description": "当前页"
+                    },
+                    "state": {
+                      "type": "number",
+                      "mock": {
+                        "mock": "1"
+                      },
+                      "description": "1在莞，2留宿，3预警，4违规"
+                    },
+                    "keyword": {
+                      "type": "string",
+                      "mock": {
+                        "mock": "关键字"
+                      },
+                      "description": "关键字"
+                    }
+                  },
+                  "required": [
+                    "pageSize",
+                    "pageNum"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "params"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "remark": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "driver_id": {
+                        "type": "number",
+                        "description": "司机id"
+                      },
+                      "driver_name": {
+                        "type": "string",
+                        "description": "司机名称"
+                      },
+                      "driver_phone": {
+                        "type": "string",
+                        "description": "联系电话"
+                      },
+                      "driver_car_num": {
+                        "type": "string",
+                        "description": "车牌"
+                      },
+                      "state": {
+                        "type": "number",
+                        "description": "状态"
+                      }
+                    }
+                  }
+                },
+                "pageSize": {
+                  "type": "number"
+                },
+                "pageNum": {
+                  "type": "number"
+                },
+                "total": {
+                  "type": "number"
+                },
+                "totalPage": {
+                  "type": "number"
+                },
+                "startIndex": {
+                  "type": "number"
+                },
+                "endIndex": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/actuator/direct/readModuleRedisData?id=2020082601": {
+      "post": {
+        "tags": [
+          "PC端统计"
+        ],
+        "summary": "基本情况",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "mock": {
+                    "mock": "2020082601"
+                  },
+                  "description": "模块id"
+                }
+              },
+              "required": [
+                "id"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "string",
+              "format": "binary",
+              "default": "[\n    {\n        \"id\": \"202008260101\",\n        \"remark\": \"预期来莞\",\n        \"data\": [\n            {\n                \"num\": 459\n            }\n        ]\n    },\n    {\n        \"id\": \"202008260102\",\n        \"remark\": \"在莞司机\",\n        \"data\": [\n            {\n                \"num\": 57\n            }\n        ]\n    },\n    {\n        \"id\": \"202008260103\",\n        \"remark\": \"预作业点\",\n        \"data\": [\n            {\n                \"num\": 237\n            }\n        ]\n    },\n    {\n        \"id\": \"202008260104\",\n        \"remark\": \"申报留宿\",\n        \"data\": [\n            {\n                \"num\": 10\n            }\n        ]\n    }\n]"
+            }
+          }
+        }
+      }
+    },
+    "/actuator/direct/readModuleRedisData?id=2020082602": {
+      "post": {
+        "tags": [
+          "PC端统计"
+        ],
+        "summary": "异常情况",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "mock": {
+                    "mock": "2020082602"
+                  },
+                  "description": "模块ID"
+                }
+              },
+              "required": [
+                "id"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "string",
+              "format": "binary",
+              "default": "[\n    {\n        \"id\": \"202008260201\",\n        \"remark\": \"预警人次\",\n        \"data\": [\n            {\n                \"num\": 0\n            }\n        ]\n    },\n    {\n        \"id\": \"202008260202\",\n        \"remark\": \"昨日违规\",\n        \"data\": [\n            {\n                \"num\": 0\n            }\n        ]\n    }\n]"
+            }
+          }
+        }
+      }
+    },
+    "/actuator/direct/search?id=202008260703": {
+      "post": {
+        "tags": [
+          "PC端统计"
+        ],
+        "summary": "申报留宿列表",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number"
+                },
+                "params": {
+                  "type": "object",
+                  "properties": {
+                    "pageSize": {
+                      "type": "number",
+                      "mock": {
+                        "mock": "15"
+                      }
+                    },
+                    "pageNum": {
+                      "type": "number",
+                      "mock": {
+                        "mock": "1"
+                      }
+                    }
+                  },
+                  "required": [
+                    "pageSize",
+                    "pageNum"
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "string",
+              "format": "binary",
+              "default": "{\n    \"id\": \"202008260703\",\n    \"remark\": \"申报留宿列表\",\n    \"data\": [\n        {\n            \"driver_id\": 1393,\n            \"driver_name\": \"常伟\",\n            \"gender\": \"男\",\n            \"driver_idcard_type\": \"护照\",\n            \"driver_idcard\": \"513021197607147954\",\n            \"nat_time\": \"2020-08-29 18:10:00\",\n            \"nat_result\": \"阴性\",\n            \"driver_phone\": \"19879161236\",\n            \"arrive_dg_time\": \"2020-08-30\",\n            \"leave_dg_time\": \"2020-08-31\",\n            \"driver_company_name\": \"阳山县阳港源兴运输公司\",\n            \"driver_car_num\": \"粤ZHE32港\",\n            \"driver_company_region\": \"凤岗镇\",\n            \"driver_company_community\": \"雁田村\",\n            \"driver_stay_address\": \"官井头维也纳酒店\"\n        },\n        {\n            \"driver_id\": 11274,\n            \"driver_name\": \"張任孫\",\n            \"gender\": \"男\",\n            \"driver_idcard_type\": \"护照\",\n            \"driver_idcard\": \"R005713(3)\",\n            \"nat_time\": \"2020-08-30 14:28:00\",\n            \"nat_result\": \"阴性\",\n            \"driver_phone\": \"13713072891\",\n            \"arrive_dg_time\": \"2020-08-30\",\n            \"leave_dg_time\": \"2020-09-01\",\n            \"driver_company_name\": \"世展運輸\",\n            \"driver_car_num\": \"粵ZFM37港\",\n            \"driver_company_region\": \"清溪镇\",\n            \"driver_company_community\": \"青湖工业园\",\n            \"driver_stay_address\": \"清溪镇青湖工园兴业三路\"\n        },\n        {\n            \"driver_id\": 1135,\n            \"driver_name\": \"黄贵祥\",\n            \"gender\": \"男\",\n            \"driver_idcard_type\": \"护照\",\n            \"driver_idcard\": \"H055962（A）\",\n            \"nat_time\": \"2020-08-28 11:55:00\",\n            \"nat_result\": \"阴性\",\n            \"driver_phone\": \"13602362261\",\n            \"arrive_dg_time\": \"2020-08-30\",\n            \"leave_dg_time\": \"2020-08-31\",\n            \"driver_company_name\": \"个体\",\n            \"driver_car_num\": \"TS8589\",\n            \"driver_company_region\": \"沙田镇\",\n            \"driver_company_community\": \"横流社区\",\n            \"driver_stay_address\": \"尚客优\"\n        }\n    ],\n    \"pageSize\": 20,\n    \"pageNum\": 1,\n    \"total\": 3,\n    \"totalPage\": 1,\n    \"startIndex\": 1,\n    \"endIndex\": 20\n}"
+            }
+          }
+        }
+      }
+    },
+    "/actuator/direct/readModuleRedisData?id=2020082603": {
+      "post": {
+        "tags": [
+          "PC端统计"
+        ],
+        "summary": "预作业点镇街分布",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "mock": {
+                    "mock": "2020082603"
+                  },
+                  "description": "模块id"
+                }
+              },
+              "required": [
+                "id"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "string",
+              "format": "binary",
+              "default": "[\n    {\n        \"id\": \"202008260301\",\n        \"remark\": \"预作业点镇街分布\",\n        \"data\": [\n            {\n                \"town_name\": \"万江街道\",\n                \"num\": 0\n            },\n            {\n                \"town_name\": \"东坑镇\",\n                \"num\": 4\n            },\n            {\n                \"town_name\": \"东城街道\",\n                \"num\": 19\n            },\n            {\n                \"town_name\": \"中堂镇\",\n                \"num\": 1\n            },\n            {\n                \"town_name\": \"企石镇\",\n                \"num\": 1\n            },\n            {\n                \"town_name\": \"凤岗镇\",\n                \"num\": 18\n            },\n            {\n                \"town_name\": \"南城街道\",\n                \"num\": 1\n            },\n            {\n                \"town_name\": \"厚街镇\",\n                \"num\": 2\n            },\n            {\n                \"town_name\": \"塘厦镇\",\n                \"num\": 12\n            },\n            {\n                \"town_name\": \"大岭山镇\",\n                \"num\": 13\n            },\n            {\n                \"town_name\": \"大朗镇\",\n                \"num\": 15\n            },\n            {\n                \"town_name\": \"寮步镇\",\n                \"num\": 10\n            },\n            {\n                \"town_name\": \"常平镇\",\n                \"num\": 12\n            },\n            {\n                \"town_name\": \"望牛墩镇\",\n                \"num\": 1\n            },\n            {\n                \"town_name\": \"松山湖高新技术产业开发区\",\n                \"num\": 0\n            },\n            {\n                \"town_name\": \"桥头镇\",\n                \"num\": 20\n            },\n            {\n                \"town_name\": \"樟木头镇\",\n                \"num\": 2\n            },\n            {\n                \"town_name\": \"横沥镇\",\n                \"num\": 15\n            },\n            {\n                \"town_name\": \"沙田镇\",\n                \"num\": 11\n            },\n            {\n                \"town_name\": \"洪梅镇\",\n                \"num\": 2\n            },\n            {\n                \"town_name\": \"清溪镇\",\n                \"num\": 33\n            },\n            {\n                \"town_name\": \"滨海湾新区\",\n                \"num\": 0\n            },\n            {\n                \"town_name\": \"石排镇\",\n                \"num\": 0\n            },\n            {\n                \"town_name\": \"石碣镇\",\n                \"num\": 7\n            },\n            {\n                \"town_name\": \"石龙镇\",\n                \"num\": 3\n            },\n            {\n                \"town_name\": \"茶山镇\",\n                \"num\": 5\n            },\n            {\n                \"town_name\": \"莞城街道\",\n                \"num\": 1\n            },\n            {\n                \"town_name\": \"虎门镇\",\n                \"num\": 6\n            },\n            {\n                \"town_name\": \"谢岗镇\",\n                \"num\": 0\n            },\n            {\n                \"town_name\": \"道滘镇\",\n                \"num\": 0\n            },\n            {\n                \"town_name\": \"长安镇\",\n                \"num\": 24\n            },\n            {\n                \"town_name\": \"高埗镇\",\n                \"num\": 8\n            },\n            {\n                \"town_name\": \"麻涌镇\",\n                \"num\": 2\n            },\n            {\n                \"town_name\": \"黄江镇\",\n                \"num\": 0\n            }\n        ]\n    }\n]"
+            }
+          }
+        }
+      }
+    },
+    "/actuator/direct/search?id=202008260701": {
+      "post": {
+        "tags": [
+          "PC端统计"
+        ],
+        "summary": "预期来莞列表",
+        "description": "<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">{</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"202008260701\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"remark\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"预期来莞列表\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"data\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: [</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">3134</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"陳昆荣\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"gender\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"男\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_idcard\\_type\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"护照\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_idcard\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"H465531（3）\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-29 00:00:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">false</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"00852-92982348\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"联发货运公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\" 粤ZAK83港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"port\\_of\\_entry\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"皇岗海关\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"drive_route\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"香港-皇岗-深圳-东莞-深圳湾\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">10046</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"蔡胜平\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"gender\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"男\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_idcard\\_type\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"护照\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_idcard\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"H08545722\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-28 00:00:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">false</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13360672838\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞清溪捷达电器制品有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粤Z1B63港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"port\\_of\\_entry\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"皇岗\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"drive_route\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"皇岗-莞深高速\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">3032</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"吴启林\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"gender\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"男\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_idcard\\_type\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"护照\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_idcard\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"H05201298\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-29 00:00:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">false</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13539091177\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"湖北粤侨运输有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粤ZSE99港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"port\\_of\\_entry\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"深圳湾\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"drive_route\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"深圳湾口岸一一路东\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">1620</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"孙润雄\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"gender\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"男\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_idcard\\_type\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"护照\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_idcard\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"C510990\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-24 00:00:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">false</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13189743096\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"天安\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"GA,38港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"port\\_of\\_entry\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"皇岗口岸\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"drive_route\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"广深高速大坪出口\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">11060</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"陈碧添\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"gender\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"男\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_idcard\\_type\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"护照\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_idcard\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"H06367728\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31 09:25:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">false</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13922884784\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粵華物流有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粤ZHF21港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"port\\_of\\_entry\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"皇岗\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"drive_route\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"香港-桥头-香港\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">2982</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"杜健兴\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"gender\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"男\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_idcard\\_type\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"身份证\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_idcard\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"H07336708\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-28 15:40:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">false</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13829173025\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"河南国丰运输有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粤ZSQ24港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"port\\_of\\_entry\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"文锦渡口岸\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"drive_route\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"从深圳入境到东莞横沥镇\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">11144</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"黄伟强\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"gender\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"男\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_idcard\\_type\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"护照\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_idcard\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"H08602440\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-28 00:00:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">false</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13427874977\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"华东货运汽车运输有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粤ZCD27港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"port\\_of\\_entry\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"深圳湾\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"drive_route\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"香港至东莞长安\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">11144</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"黄伟强\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"gender\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"男\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_idcard\\_type\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"护照\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_idcard\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"H08602440\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-28 00:00:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">false</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13427874977\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"华东货运汽车运输有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粤ZCD27港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"port\\_of\\_entry\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"深圳湾\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"drive_route\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"深圳至东莞长安\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">1687</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"刘石带\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"gender\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"男\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_idcard\\_type\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"护照\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_idcard\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"H0856336801\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-22 00:00:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">false</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"14715694078\\n927\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"金盾环宇\\n运输公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粤ZBV73港\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"port\\_of\\_entry\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"文锦渡\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"drive_route\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"香港至清溪\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        },</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">2629</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"姚兴华\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"gender\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"男\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_idcard\\_type\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"护照\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_idcard\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"H06482706\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-28 00:00:00\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"nat_result\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">false</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver_phone\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"13802451610\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"arrive\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"leave\\_dg\\_time\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2020-08-31\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_company\\_name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"东莞明信电子有限公司\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"driver\\_car\\_num\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"粵Z0S03港    \"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"port\\_of\\_entry\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"皇岗\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">            </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"drive_route\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"香港-皇岗-深圳-东莞\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        }</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    ],</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"pageSize\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">10</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"pageNum\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">1</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"total\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">296</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"totalPage\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">30</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"startIndex\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">1</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"endIndex\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">10</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">}</span>",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "mock": {
+                    "mock": "202008260701"
+                  }
+                },
+                "params": {
+                  "type": "object",
+                  "properties": {
+                    "pageSize": {
+                      "type": "number",
+                      "mock": {
+                        "mock": "15"
+                      }
+                    },
+                    "pageNum": {
+                      "type": "number",
+                      "mock": {
+                        "mock": "1"
+                      }
+                    }
+                  },
+                  "required": [
+                    "pageSize",
+                    "pageNum"
+                  ]
+                }
+              },
+              "required": [
+                "params",
+                "id"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "remark": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "driver_id": {
+                        "type": "number"
+                      },
+                      "driver_name": {
+                        "type": "string"
+                      },
+                      "gender": {
+                        "type": "string"
+                      },
+                      "driver_idcard_type": {
+                        "type": "string"
+                      },
+                      "driver_idcard": {
+                        "type": "string"
+                      },
+                      "nat_time": {
+                        "type": "string"
+                      },
+                      "nat_result": {
+                        "type": "boolean"
+                      },
+                      "driver_phone": {
+                        "type": "string"
+                      },
+                      "arrive_dg_time": {
+                        "type": "string"
+                      },
+                      "leave_dg_time": {
+                        "type": "string"
+                      },
+                      "driver_company_name": {
+                        "type": "string"
+                      },
+                      "driver_car_num": {
+                        "type": "string"
+                      },
+                      "port_of_entry": {
+                        "type": "string"
+                      },
+                      "drive_route": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "driver_id",
+                      "driver_name",
+                      "gender",
+                      "driver_idcard_type",
+                      "driver_idcard",
+                      "nat_time",
+                      "nat_result",
+                      "driver_phone",
+                      "arrive_dg_time",
+                      "leave_dg_time",
+                      "driver_company_name",
+                      "driver_car_num",
+                      "port_of_entry",
+                      "drive_route"
+                    ]
+                  }
+                },
+                "pageSize": {
+                  "type": "number"
+                },
+                "pageNum": {
+                  "type": "number"
+                },
+                "total": {
+                  "type": "number"
+                },
+                "totalPage": {
+                  "type": "number"
+                },
+                "startIndex": {
+                  "type": "number"
+                },
+                "endIndex": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
